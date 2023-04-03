@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalDepot.Api", "DigitalDepot.Api\DigitalDepot.Api.csproj", "{9398A77E-E469-4D85-A7BA-37FC1F9C722A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalDepot.AppService", "DigitalDepot.AppService\DigitalDepot.AppService.csproj", "{86A77EEB-C8A1-463F-B570-3D6D1B20841D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalDepot.DAL", "DigitalDepot.DAL\DigitalDepot.DAL.csproj", "{18DE2024-F181-4B45-A335-95B9F1A9BDA0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalDepot.Domain", "DigitalDepot.Domain\DigitalDepot.Domain.csproj", "{F46BAE0F-75CE-4038-93F9-26033BB59991}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3CB1752F-A247-49BF-8C24-849ECAEDBB92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalDepot.Api.Tests", "DigitalDepot.Api.Tests\DigitalDepot.Api.Tests.csproj", "{7C6224A9-286F-4DA9-AF9B-59EF75588494}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalDepot.Api.Tests", "Tests\DigitalDepot.Api.Tests\DigitalDepot.Api.Tests.csproj", "{FBDF4531-3492-4E74-A5E0-6107E97032DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalDepot.AppService.Tests", "DigitalDepot.AppService.Tests\DigitalDepot.AppService.Tests.csproj", "{97B783C7-8ABC-4CC8-93DE-EE8B4C89D192}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalDepot.AppService.Tests", "Tests\DigitalDepot.AppService.Tests\DigitalDepot.AppService.Tests.csproj", "{7410D6A1-2820-4CFC-96AC-978E9FB7AEEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalDepot.Api", "Source\DigitalDepot.Api\DigitalDepot.Api.csproj", "{275BB2D1-73BB-4D30-BF25-34EFD8E6930C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalDepot.AppService", "Source\DigitalDepot.AppService\DigitalDepot.AppService.csproj", "{91DC14D5-CC36-4AFE-ABB1-CA1AABCC39A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalDepot.DAL", "Source\DigitalDepot.DAL\DigitalDepot.DAL.csproj", "{AD8CF7CD-E8DC-4FF7-BC57-3691D90C7812}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalDepot.Domain", "Source\DigitalDepot.Domain\DigitalDepot.Domain.csproj", "{229C49C4-02DF-4EBE-97E7-B34DE522878A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,37 +23,37 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9398A77E-E469-4D85-A7BA-37FC1F9C722A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9398A77E-E469-4D85-A7BA-37FC1F9C722A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9398A77E-E469-4D85-A7BA-37FC1F9C722A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9398A77E-E469-4D85-A7BA-37FC1F9C722A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86A77EEB-C8A1-463F-B570-3D6D1B20841D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86A77EEB-C8A1-463F-B570-3D6D1B20841D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86A77EEB-C8A1-463F-B570-3D6D1B20841D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86A77EEB-C8A1-463F-B570-3D6D1B20841D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18DE2024-F181-4B45-A335-95B9F1A9BDA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18DE2024-F181-4B45-A335-95B9F1A9BDA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18DE2024-F181-4B45-A335-95B9F1A9BDA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18DE2024-F181-4B45-A335-95B9F1A9BDA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F46BAE0F-75CE-4038-93F9-26033BB59991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F46BAE0F-75CE-4038-93F9-26033BB59991}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F46BAE0F-75CE-4038-93F9-26033BB59991}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F46BAE0F-75CE-4038-93F9-26033BB59991}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C6224A9-286F-4DA9-AF9B-59EF75588494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C6224A9-286F-4DA9-AF9B-59EF75588494}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C6224A9-286F-4DA9-AF9B-59EF75588494}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C6224A9-286F-4DA9-AF9B-59EF75588494}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97B783C7-8ABC-4CC8-93DE-EE8B4C89D192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97B783C7-8ABC-4CC8-93DE-EE8B4C89D192}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97B783C7-8ABC-4CC8-93DE-EE8B4C89D192}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97B783C7-8ABC-4CC8-93DE-EE8B4C89D192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDF4531-3492-4E74-A5E0-6107E97032DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDF4531-3492-4E74-A5E0-6107E97032DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDF4531-3492-4E74-A5E0-6107E97032DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDF4531-3492-4E74-A5E0-6107E97032DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7410D6A1-2820-4CFC-96AC-978E9FB7AEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7410D6A1-2820-4CFC-96AC-978E9FB7AEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7410D6A1-2820-4CFC-96AC-978E9FB7AEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7410D6A1-2820-4CFC-96AC-978E9FB7AEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275BB2D1-73BB-4D30-BF25-34EFD8E6930C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275BB2D1-73BB-4D30-BF25-34EFD8E6930C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275BB2D1-73BB-4D30-BF25-34EFD8E6930C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275BB2D1-73BB-4D30-BF25-34EFD8E6930C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DC14D5-CC36-4AFE-ABB1-CA1AABCC39A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DC14D5-CC36-4AFE-ABB1-CA1AABCC39A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DC14D5-CC36-4AFE-ABB1-CA1AABCC39A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DC14D5-CC36-4AFE-ABB1-CA1AABCC39A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8CF7CD-E8DC-4FF7-BC57-3691D90C7812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8CF7CD-E8DC-4FF7-BC57-3691D90C7812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8CF7CD-E8DC-4FF7-BC57-3691D90C7812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8CF7CD-E8DC-4FF7-BC57-3691D90C7812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{229C49C4-02DF-4EBE-97E7-B34DE522878A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{229C49C4-02DF-4EBE-97E7-B34DE522878A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{229C49C4-02DF-4EBE-97E7-B34DE522878A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{229C49C4-02DF-4EBE-97E7-B34DE522878A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7C6224A9-286F-4DA9-AF9B-59EF75588494} = {3CB1752F-A247-49BF-8C24-849ECAEDBB92}
-		{97B783C7-8ABC-4CC8-93DE-EE8B4C89D192} = {3CB1752F-A247-49BF-8C24-849ECAEDBB92}
+		{FBDF4531-3492-4E74-A5E0-6107E97032DB} = {3CB1752F-A247-49BF-8C24-849ECAEDBB92}
+		{7410D6A1-2820-4CFC-96AC-978E9FB7AEEC} = {3CB1752F-A247-49BF-8C24-849ECAEDBB92}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DED8DD75-A829-4AC6-90AB-662E363CB10E}
